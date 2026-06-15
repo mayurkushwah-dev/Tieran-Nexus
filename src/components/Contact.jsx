@@ -1,6 +1,15 @@
+import { motion } from "framer-motion";
+
 function Contact(){
     return(
-        <section id="contact" className="contact">
+        <motion.section 
+        id="contact" 
+        className="contact"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        >
             <h2>Contact</h2>
 
             <p>
@@ -28,14 +37,14 @@ function Contact(){
                 </a>
 
                 <a
-                    href="www.linkedin.com/in/mayur-kushwah"
+                    href="https://www.linkedin.com/in/mayur-kushwah"
                     target="_blank"
                     rel="noreferrer"
                 >
                     LinkedIn
                 </a>
             </div>
-        </section>
+        </motion.section>
     );
 }
 

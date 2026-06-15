@@ -1,6 +1,16 @@
+import { motion } from "framer-motion";
+
 function About(){
     return(
-        <section id="about" className="about">
+        <motion.section
+        id="about" 
+        className="about"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        >
+
             <h2>About Me</h2>
 
             <p>
@@ -8,7 +18,8 @@ function About(){
                 I enjoy solving DSA problems, building Machine Learning projects,
                 developing Android applications, and exploring modern web technologies.
             </p>
-        </section>
+
+        </motion.section>
     );
 }
 

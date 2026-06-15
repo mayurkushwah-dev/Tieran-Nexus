@@ -1,4 +1,5 @@
 import "./App.css";
+import { motion } from "framer-motion";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -9,7 +10,12 @@ function App(){
   return (
     <>
       <Navbar />
-    <div className="hero">
+    <motion.div
+    className="hero"
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1 }}
+    >
       <h1>Tieran Nexus</h1>
 
       <h2>Computer Science Undergraduate</h2>
@@ -17,7 +23,7 @@ function App(){
       <p>DSA • AI/ML • Android Development • Web Development</p>
 
       <button>Explore Portfolio</button>
-    </div>
+    </motion.div>
     <About/>
     <Skills/>
     <Projects/>
