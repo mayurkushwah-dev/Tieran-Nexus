@@ -43,6 +43,14 @@ function Contact(){
                 >
                     LinkedIn
                 </a>
+
+                <a
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Resume
+                </a>
             </div>
         </motion.section>
     );

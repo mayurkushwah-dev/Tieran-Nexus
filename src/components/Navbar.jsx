@@ -15,7 +15,7 @@ function Navbar() {
         });
         },
         {
-        threshold: 0.5,
+        threshold: 0.3,
         }
     );
 
@@ -28,7 +28,7 @@ function Navbar() {
 
     return (
     <nav className="navbar">
-        <div className="logo">Tieran Nexus</div>
+        <div className="logo">TIERAN<span>.NEXUS</span></div>
 
         <ul className="nav-links">
         <li>

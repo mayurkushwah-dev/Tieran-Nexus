@@ -5,10 +5,13 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Background from "./components/Background";
+import Footer from "./components/Footer";
 
 function App(){
   return (
     <>
+      <Background />
       <Navbar />
     <motion.div
     className="hero"
@@ -18,16 +21,19 @@ function App(){
     >
       <h1>Tieran Nexus</h1>
 
-      <h2>Computer Science Undergraduate</h2>
+      <h2>Building Intelligent Systems,
+          Interactive Experiences,
+          and Future-Ready Solutions.</h2>
 
-      <p>DSA • AI/ML • Android Development • Web Development</p>
+      <p>AI/ML • Full Stack • Android • DSA</p>
 
-      <button>Explore Portfolio</button>
+      <button>Explore Projects</button>
     </motion.div>
     <About/>
     <Skills/>
     <Projects/>
     <Contact/>
+    <Footer />
     </>
   );
 }
