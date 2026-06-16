@@ -10,13 +10,13 @@ function Navbar() {
         (entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
+                setActiveSection(entry.target.id);
             }
         });
-        },
-        {
-        threshold: 0.3,
-        }
+    },
+    {
+        threshold: 0.1,
+    }
     );
 
     sections.forEach((section) => {
