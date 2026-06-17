@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 function App(){
   return (
-    <>
+    <div>
       <Background />
       <Navbar />
     <motion.div
@@ -34,7 +34,7 @@ function App(){
     <Projects/>
     <Contact/>
     <Footer />
-    </>
+    </div>
   );
 }
 
